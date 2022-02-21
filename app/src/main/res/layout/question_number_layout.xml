@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="3dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:paddingBottom="20dp"
+    >
+
+    <TextView
+        android:id="@+id/setsaTV"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_corner_bacgkround_white"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="180"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/White"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

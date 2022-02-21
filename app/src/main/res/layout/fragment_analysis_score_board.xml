@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#48E4E4E4"
+    tools:context=".fragments.YourScoreFragment"
+
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/up"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/totalMarksLinearLayout"
+            android:layout_width="200dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_corner_bacgkround_white"
+            android:backgroundTint="@color/colorPrimary"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Marks Scored"
+                android:textAlignment="center"
+                android:textColor="#FFE600"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/marksScoredLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="---"
+                android:textAlignment="center"
+                android:textColor="@color/White"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rankLL"
+            android:layout_width="200dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_corner_bacgkround_white"
+            android:backgroundTint="@color/btnYellow"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/totalMarksLinearLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Your Rank"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/myRankTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:textAlignment="center"
+                    android:textColor="@color/White"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/slash"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/slash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:textAlignment="center"
+                    android:textColor="@color/White"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/totalAppearedTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:textAlignment="center"
+                    android:textColor="@color/White"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/slash" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+        <!--    <LinearLayout-->
+        <!--        android:id="@+id/marksComparisonLinearLayout"-->
+        <!--        android:layout_width="0dp"-->
+        <!--        android:layout_height="80dp"-->
+        <!--        android:layout_marginStart="16dp"-->
+        <!--        android:layout_marginTop="16dp"-->
+        <!--        android:layout_marginEnd="16dp"-->
+        <!--        android:background="@drawable/rounded_corner_bacgkround_white"-->
+        <!--        android:backgroundTint="@color/White"-->
+        <!--        android:orientation="horizontal"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/totalMarksLinearLayout">-->
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:orientation="vertical">-->
+
+        <!--            <TextView-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginTop="10dp"-->
+        <!--                android:text="Your Score"-->
+        <!--                android:textAlignment="center"-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:textSize="14sp" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/marksScoredSmall"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginTop="6dp"-->
+        <!--                android:text="126"-->
+        <!--                android:textAlignment="center"-->
+        <!--                android:textColor="#00137C"-->
+        <!--                android:textSize="24sp"-->
+        <!--                android:textStyle="bold" />-->
+
+        <!--        </LinearLayout>-->
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="40dp"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_weight="2"-->
+        <!--            android:src="@drawable/compare_icon" />-->
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:orientation="vertical">-->
+
+        <!--            <TextView-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginTop="10dp"-->
+        <!--                android:text="Topper's Score"-->
+        <!--                android:textAlignment="center"-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:textSize="14sp" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/topperMarks"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginTop="6dp"-->
+        <!--                android:text="198"-->
+        <!--                android:textAlignment="center"-->
+        <!--                android:textColor="#00137C"-->
+        <!--                android:textSize="24sp"-->
+        <!--                android:textStyle="bold" />-->
+
+        <!--        </LinearLayout>-->
+
+
+        <!--    </LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/maxMarksLL"
+            android:layout_width="110dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/rounded_corner_bacgkround_white"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/percentageLL">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Max. Marks"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/maxMarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="---"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/asdf"
+            android:layout_width="110dp"
+            android:layout_height="70dp"
+            android:background="@drawable/rounded_corner_bacgkround_white"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/percentageLL"
+            app:layout_constraintStart_toEndOf="@+id/maxMarksLL"
+            app:layout_constraintTop_toTopOf="@+id/percentageLL">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Total Qs"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/totalQTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="---"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/percentageLL"
+            android:layout_width="110dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/rounded_corner_bacgkround_white"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rankLL">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Percentage"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/percentage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="---%"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/correctLL"
+            android:layout_width="110dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corner_bacgkround_white"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/percentageLL">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Correct"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/correctNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="---"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/incorrectLL"
+            android:layout_width="110dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corner_bacgkround_white"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/unattemptedLL"
+            app:layout_constraintStart_toEndOf="@id/correctLL"
+            app:layout_constraintTop_toBottomOf="@+id/percentageLL">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Incorrect"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/incorrectNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="---"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/unattemptedLL"
+            android:layout_width="110dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/rounded_corner_bacgkround_white"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/percentageLL">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Unattempted"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/unattemptedNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="---"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

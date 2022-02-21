@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/analysisScoreBoard">
+
+    <fragment
+        android:id="@+id/analysisScoreBoard"
+        android:name="com.studyinsta.studyinsta.fragments.YourScoreFragment"
+        android:label="Your Score"
+        tools:layout="@layout/fragment_analysis_score_board" />
+
+    <fragment
+        android:id="@+id/analysisQuestionsAnalyse"
+        android:name="com.studyinsta.studyinsta.fragments.TestAnalysisFragment"
+        android:label="Test Analysis"
+        tools:layout="@layout/fragment_analysis_questions_analyse" />
+
+<!--    <fragment-->
+<!--        android:id="@+id/analysisLeaderBoard"-->
+<!--        android:name="com.jharkhandwarrior.main.fragments.RankListFragment"-->
+<!--        android:label="Rank List"-->
+<!--        tools:layout="@layout/fragment_analysis_leader_board" />-->
+</navigation>

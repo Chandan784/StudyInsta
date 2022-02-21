@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/analysisScoreBoard"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="Your Score" />
+
+    <item
+        android:id="@+id/analysisQuestionsAnalyse"
+        android:icon="@drawable/analyse_icon"
+        android:title="Test Analysis" />
+
+<!--    <item-->
+<!--        android:id="@+id/analysisLeaderBoard"-->
+<!--        android:icon="@drawable/rank_icon"-->
+<!--        android:title="Rank List" />-->
+
+</menu>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_homeFragment"
+        android:title="Home"
+        android:icon="@drawable/home_icon_image"
+        android:menuCategory="secondary"
+        />
+
+        <item
+            android:id="@+id/asdfasd"
+            android:title="Purchased Products"
+            android:menuCategory="secondary">
+            <menu>
+
+                <item
+                    android:id="@+id/nav_myCoursesFragment"
+                    android:title="My Courses"
+                    android:icon="@drawable/my_courses_icon_image"
+                    android:menuCategory="secondary"
+                    />
+                <item
+                    android:id="@+id/nav_myNotesFragment"
+                    android:title="My Notes"
+                    android:icon="@drawable/notes_icon_image"
+                    android:menuCategory="secondary"
+                    />
+
+                <item
+                    android:id="@+id/nav_myTestsFragment"
+                    android:title="My Tests"
+                    android:icon="@drawable/test_icon_image"
+                    android:menuCategory="secondary"
+                    />
+
+                <item
+                    android:id="@+id/nav_myEbookFragment"
+                    android:title="My Download"
+                    android:icon="@drawable/download"
+                    android:menuCategory="secondary"
+                    />
+
+            </menu>
+
+        </item>
+
+
+    <item
+        android:id="@+id/nav_myAccountFragment"
+        android:title="My Account"
+        android:icon="@drawable/account_icon_image"
+        android:menuCategory="secondary"
+        />
+
+    <item
+        android:id="@+id/nav_notificationsFragment"
+        android:title="Notification"
+        android:icon="@drawable/notification_icon_image"
+        android:menuCategory="secondary"
+        />
+    <group android:id="@+id/asd">
+
+        <item
+            android:id="@+id/nav_shareBtn"
+            android:title="Share This App"
+            android:icon="@drawable/share_icon_image"
+            android:menuCategory="secondary"
+            />
+        <item
+            android:id="@+id/nav_supportBtn"
+            android:title="Helpline"
+            android:icon="@drawable/support_icon_image"
+            android:menuCategory="secondary"
+            />
+        <item
+            android:id="@+id/nav_youtubeBtn"
+            android:title="YT Channel"
+            android:icon="@drawable/youtube_icon_image"
+            android:menuCategory="secondary"
+            />
+
+        <item
+            android:id="@+id/nav_telegramBTn"
+            android:title="Join Telegram"
+            android:icon="@drawable/telegram_icon_image"
+            android:menuCategory="secondary"
+            />
+
+        <item
+            android:id="@+id/nav_aboutBtn"
+            android:title="Privacy Policy"
+            android:icon="@drawable/info_icon_image"
+            android:menuCategory="secondary"
+            />
+    </group>
+
+    <item
+        android:id="@+id/nav_signout"
+        android:title="Log Out"
+        android:icon="@drawable/sign_out_icon_image"
+        android:menuCategory="secondary"/>
+
+
+</menu>
